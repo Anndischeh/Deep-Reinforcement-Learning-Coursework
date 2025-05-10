@@ -1,0 +1,14 @@
+setuptools --upgrade  
+ascii_graph
+swig
+gymnasium[box2d]  
+ray[tune] 
+torch
+torchvision
+opencv-python
+ale-py
+gputil
+lz4
+wandb 
+ray[rllib] 
+gymnasium[atari,accept-rom-license] 
