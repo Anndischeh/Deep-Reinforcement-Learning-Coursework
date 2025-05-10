@@ -1,0 +1,11 @@
+Using device: cpu
+Episode 50, Reward: 40.00, Alpha: 0.7261
+Episode 100, Reward: 194.00, Alpha: 0.0512
+Episode 150, Reward: 172.00, Alpha: 0.0157
+Episode 200, Reward: 291.00, Alpha: 0.0167
+Episode 250, Reward: 374.00, Alpha: 0.0128
+Episode 300, Reward: 500.00, Alpha: 0.0150
+Episode 350, Reward: 500.00, Alpha: 0.0154
+Episode 400, Reward: 500.00, Alpha: 0.0048
+Episode 450, Reward: 500.00, Alpha: 0.0040
+Episode 500, Reward: 500.00, Alpha: 0.0025

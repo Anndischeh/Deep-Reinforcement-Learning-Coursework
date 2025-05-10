@@ -1,0 +1,25 @@
+Episode:    0 | Reward:   20.0 | Avg Reward (last 50):   20.0 | Epsilon: 0.995
+Episode:   50 | Reward:   15.0 | Avg Reward (last 50):   22.6 | Epsilon: 0.774
+Episode:  100 | Reward:   30.0 | Avg Reward (last 50):   22.6 | Epsilon: 0.603
+Episode:  150 | Reward:   29.0 | Avg Reward (last 50):   23.6 | Epsilon: 0.469
+Episode:  200 | Reward:   47.0 | Avg Reward (last 50):   27.2 | Epsilon: 0.365
+Episode:  250 | Reward:   32.0 | Avg Reward (last 50):   38.0 | Epsilon: 0.284
+Episode:  300 | Reward:   26.0 | Avg Reward (last 50):   39.4 | Epsilon: 0.221
+Episode:  350 | Reward:  132.0 | Avg Reward (last 50):   79.3 | Epsilon: 0.172
+Episode:  400 | Reward:   10.0 | Avg Reward (last 50):   48.6 | Epsilon: 0.134
+Episode:  450 | Reward:   14.0 | Avg Reward (last 50):   99.4 | Epsilon: 0.104
+Episode:  500 | Reward:   24.0 | Avg Reward (last 50):   94.1 | Epsilon: 0.081
+Episode:  550 | Reward:   67.0 | Avg Reward (last 50):  141.3 | Epsilon: 0.063
+Episode:  600 | Reward:  122.0 | Avg Reward (last 50):  152.5 | Epsilon: 0.049
+Episode:  650 | Reward:  179.0 | Avg Reward (last 50):  160.1 | Epsilon: 0.038
+Episode:  700 | Reward:  158.0 | Avg Reward (last 50):  159.7 | Epsilon: 0.030
+Episode:  750 | Reward:  141.0 | Avg Reward (last 50):  156.8 | Epsilon: 0.023
+Episode:  800 | Reward:  136.0 | Avg Reward (last 50):  151.4 | Epsilon: 0.018
+Episode:  850 | Reward:  256.0 | Avg Reward (last 50):  216.0 | Epsilon: 0.014
+Episode:  900 | Reward:  171.0 | Avg Reward (last 50):  196.9 | Epsilon: 0.011
+Episode:  950 | Reward:   16.0 | Avg Reward (last 50):  195.2 | Epsilon: 0.010
+Episode:  999 | Reward:   34.0 | Avg Reward (last 50):   74.9 | Epsilon: 0.010
+C:\Users\Vostro 3300\AppData\Local\Programs\Python\Python312\Lib\site-packages\gymnasium\wrappers\rendering.py:283: UserWarning: [33mWARN: Overwriting existing videos at C:\Users\Vostro 3300\Desktop\707_D Reinforcment L\Report_Reinforcment\video folder (try specifying a different `video_folder` for the `RecordVideo` wrapper if this is not desired)[0m
+  logger.warn(
+Video recorded at: video/dqn_cartpole.mp4
+Training and Analysis Complete!

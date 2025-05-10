@@ -1,0 +1,35 @@
+Initial Environment:
+A . . . . 
+. X . . . 
+. . . X . 
+. . . . . 
+. . . . G 
+----------
+
+Running a single Q-learning experiment...
+
+Running parameter sweep...
+Running experiment with alpha=0.1, gamma=0.7, epsilon=0.1
+Running experiment with alpha=0.1, gamma=0.7, epsilon=0.3
+Running experiment with alpha=0.1, gamma=0.9, epsilon=0.1
+Running experiment with alpha=0.1, gamma=0.9, epsilon=0.3
+Running experiment with alpha=0.3, gamma=0.7, epsilon=0.1
+Running experiment with alpha=0.3, gamma=0.7, epsilon=0.3
+Running experiment with alpha=0.3, gamma=0.9, epsilon=0.1
+Running experiment with alpha=0.3, gamma=0.9, epsilon=0.3
+
+Analyzing results...
+Alpha: 0.1, Gamma: 0.7, Epsilon: 0.1, Avg Reward (Last 100): 9.282999999999998
+Alpha: 0.1, Gamma: 0.7, Epsilon: 0.3, Avg Reward (Last 100): 9.294999999999998
+Alpha: 0.1, Gamma: 0.9, Epsilon: 0.1, Avg Reward (Last 100): 9.282999999999998
+Alpha: 0.1, Gamma: 0.9, Epsilon: 0.3, Avg Reward (Last 100): 9.294999999999996
+Alpha: 0.3, Gamma: 0.7, Epsilon: 0.1, Avg Reward (Last 100): 9.289999999999996
+Alpha: 0.3, Gamma: 0.7, Epsilon: 0.3, Avg Reward (Last 100): 9.291999999999996
+Alpha: 0.3, Gamma: 0.9, Epsilon: 0.1, Avg Reward (Last 100): 9.291999999999996
+Alpha: 0.3, Gamma: 0.9, Epsilon: 0.3, Avg Reward (Last 100): 9.289999999999997
+
+Best Performing Parameters:
+Alpha: 0.1, Gamma: 0.7, Epsilon: 0.3
+Visualizing the policy obtained from the best parameters
+
+Done!
