@@ -18,7 +18,7 @@ import wandb
 
 parser = add_rllib_example_script_args(
     default_reward=float("inf"),
-    default_timesteps=30000,
+    default_timesteps=3000000,
     default_iters = 1000000,
 )
 parser.set_defaults(
