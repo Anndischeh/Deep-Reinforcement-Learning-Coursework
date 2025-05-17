@@ -27,19 +27,19 @@ This section includes the implementation of a Soft Actor-Critic (SAC) algorithm 
 
 This implementation includes the following components:
 
-Definition of a Gaussian policy network with mean and log_std layers
+- Definition of a Gaussian policy network with mean and log_std layers
 
-Two independent Q-networks and their target networks for training stability
+- Two independent Q-networks and their target networks for training stability
 
-An experience replay buffer mechanism
+- An experience replay buffer mechanism
 
-Training using gradient descent and soft updates of target network weights
+- Training using gradient descent and soft updates of target network weights
 
-Automatic entropy tuning to balance exploration and exploitation
+- Automatic entropy tuning to balance exploration and exploitation
 
-Plotting training rewards and losses after execution
+- Plotting training rewards and losses after execution
 
-✅ The results of this section are saved in: outputs
+**✅ The results** of this section are saved in: `outputs`
 
 ## Outputs
 
