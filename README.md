@@ -45,4 +45,34 @@ Plotting training rewards and losses after execution
 
 Outputs for all experiments (except for the RLlib Atari training which is stored on WandB) can be found in the `outputs/` directory of this repository.
 
+## 📁 Project Structure
+```
+C:.
+├── Advanced.py                         # Implementation of the advanced reinforcement learning algorithms and experiments.
+├── Advanced_rllib.py                   # RLlib-based implementation and training on Atari environment.
+├── Basic.py                           # Basic GridWorld environment and Q-learning implementation.
+├── Extras.py                          # Extra experiments including Soft Actor-Critic (SAC) on CartPole.
+├── requirements.txt                   # List of Python dependencies for the project.
+└── outputs/                          # Folder containing all results and logs generated during training and evaluation.
+    ├── Advanced_log.txt               # Training logs for Advanced experiments.
+    ├── Advanced_Training Progress-Loss.png    # Training loss curve for Advanced experiments.
+    ├── Advanced_Training Progress-Reward.png  # Training reward curve for Advanced experiments.
+    ├── Basic_Best-Performing-Parameter.png    # Visualization of best parameters found in Basic experiments.
+    ├── Basic_Learned-Policy-2.png     # Learned policy visualization for Basic experiments.
+    ├── Basic_Learned-policy.png       # Another learned policy visualization for Basic experiments.
+    ├── Basic_log.txt                  # Training logs for Basic experiments.
+    ├── Basic_Q-Learning-Episode.png  # Q-learning episode performance plot.
+    ├── episode_stats.png              # General episode statistics visualization.
+    ├── Extras_log.txt                 # Training logs for Extras experiments.
+    ├── Extra_Learned-Policy.png       # Learned policy visualization for Extras experiments.
+    ├── Figure_1.png                   # Additional result figure.
+    ├── Figure_2.png                   # Additional result figure.
+    ├── Figure_3.png                   # Additional result figure.
+    ├── Figure_4.png                   # Additional result figure.
+    ├── training_results.png           # Summary plot of training results.
+    └── Videos/                       # Folder containing recorded training episodes.
+        ├── rl-video-episode-0.mp4    # Training episode video 0.
+        ├── rl-video-episode-1.mp4    # Training episode video 1.
+        └── rl-video-episode-2.mp4    # Training episode video 2.
 
+```
