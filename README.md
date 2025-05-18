@@ -76,3 +76,26 @@ C:.
         └── rl-video-episode-2.mp4    # Training episode video 2.
 
 ```
+
+---
+
+## 🚀 How to Run
+
+To run any script (except `Advanced_rllib.py`), rename `basic.py` with the script name you want to execute and run:
+
+```bash
+python basic.py
+```
+
+
+**Running `advanced_rllib.py`**
+
+For `advanced_rllib.py`, you can execute it with specific hardware and parameter settings. For example, to run with 2 CPUs, 1 GPU, and configure parameters like `num-env-runners` and `num-learners`, use:
+
+```bash
+python advanced_rllib.py --num-cpus=2 --num-env-runners=1 --num-learners=1 --num-gpus-per-learner=1 --framework=torch
+```
+
+*Note: The command uses `python`, not `!python`, unless you are executing within a Jupyter notebook.*
+
+
