@@ -1,49 +1,76 @@
 # Deep Reinforcement Learning Coursework
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+![PyTorch](https://img.shields.io/badge/pytorch-2.0-orange)
+![Reinforcement Learning](https://img.shields.io/badge/field-Reinforcement%20Learning-purple)
+![Gym](https://img.shields.io/badge/env-OpenAI%20Gym-yellow)
+![RLlib](https://img.shields.io/badge/framework-RLlib-red)
+![Weights & Biases](https://img.shields.io/badge/tracking-W%26B-black)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-This repository contains the coursework for the Deep Reinforcement Learning module. It is organized into three main sections:
 
-## 1. Basic
+# Deep Reinforcement Learning Coursework
 
-In the Basic section, a 5x5 GridWorld environment is defined where an agent must navigate from the start state to a goal state while avoiding obstacles. The environment includes a deterministic state transition function and a reward function based on movement, collisions, and reaching the goal. The Q-learning algorithm is implemented with specified hyperparameters (α, γ, ε) and trained over multiple episodes. The agent’s performance is analyzed through reward and episode length trends. Parameter tuning is also conducted to identify the most effective learning configuration.
+This repository contains my coursework for the **Deep Reinforcement Learning** module.
+The project explores classical and deep RL algorithms across environments of increasing complexity,
+from tabular GridWorld to high-dimensional visual Atari environments.
 
-The results of this section are saved in the outputs folder.
+The implementation covers **Q-learning, DQN (with improvements), PPO, and SAC**, with
+systematic evaluation and visualization of learning behavior.
 
-## 2. Advanced
+---
 
-The Advanced section includes:
+## 🔍 Project Overview
 
-- **DQN Implementation**: A custom implementation of the Deep Q-Network algorithm.
-- **RLlib Algorithm on Atari Environment**: Utilization of RLlib (a scalable RL library) to train agents in Atari environments.
+The coursework is organized into three main sections:
 
-The results and training logs for the **RLlib on Atari** experiments are logged and available on Weights & Biases at the following link:
+### 1️⃣ Basic — Tabular Reinforcement Learning
 
-👉 [WandB Project: Deep Reinforcement Learning](https://wandb.ai/anndischeh-univ-/Deep%20Reinforcement%20Learning)
+- Implemented a **5×5 GridWorld** environment with obstacles
+- Defined deterministic state transition and reward functions
+- Trained an agent using **Q-learning**
+- Tuned learning rate (α), discount factor (γ), and exploration rate (ε)
+- Evaluated learning using:
+  - Cumulative reward per episode
+  - Episode length trends
+  - Learned policy heatmaps
 
-## 3. Extras
+📊 Results and visualizations are stored in the `outputs/` directory.
 
-Extra: Soft Actor-Critic (SAC) Training on CartPole
+---
 
-This section includes the implementation of a Soft Actor-Critic (SAC) algorithm for the classic CartPole-v1 environment from the Gym library. Unlike conventional approaches that use discrete algorithms for CartPole, this implementation uses a Gaussian policy with continuous outputs, which are then mapped to discrete actions.
+### 2️⃣ Advanced — Deep Reinforcement Learning
 
-This implementation includes the following components:
+This section extends learning to environments that require function approximation.
 
-- Definition of a Gaussian policy network with mean and log_std layers
+- **Deep Q-Network (DQN)**
+  - Implemented neural-network-based Q-learning
+  - Used experience replay for training stability
 
-- Two independent Q-networks and their target networks for training stability
+- **RLlib on Atari (Pong)**
+  - Trained an agent on a high-dimensional pixel-based environment
+  - Applied policy-gradient-based RL using RLlib
+  - Tracked performance metrics such as episode return, length, loss, and KL divergence
 
-- An experience replay buffer mechanism
+📈 Training logs and metrics for Atari experiments are available on Weights & Biases:
 
-- Training using gradient descent and soft updates of target network weights
+👉 https://wandb.ai/anndischeh-univ-/Deep%20Reinforcement%20Learning
 
-- Automatic entropy tuning to balance exploration and exploitation
+---
 
-- Plotting training rewards and losses after execution
+### 3️⃣ Extras — Soft Actor-Critic (SAC)
 
-**✅ The results** of this section are saved in: `outputs`
+- Implemented **Soft Actor-Critic (SAC)** on CartPole-v1
+- Used:
+  - Gaussian policy network
+  - Twin Q-networks with target networks
+  - Experience replay buffer
+  - Automatic entropy tuning
+- Mapped continuous policy outputs to discrete actions
+- Analyzed reward curves and loss evolution
 
-## Outputs
+✅ Results and plots are saved in `outputs/`.
 
-Outputs for all experiments (except for the RLlib Atari training which is stored on WandB) can be found in the `outputs/` directory of this repository.
+---
 
 ## 📁 Project Structure
 ```
@@ -81,21 +108,56 @@ C:.
 
 ## 🚀 How to Run
 
-To run any script (except `Advanced_rllib.py`), rename `basic.py` with the script name you want to execute and run:
+### 1️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+### 2️⃣ Run Experiments
+#### 🔹 Basic (Q-learning - GridWorld):
 
 ```bash
 python basic.py
 ```
-
-
-**Running `advanced_rllib.py`**
-
-For `advanced_rllib.py`, you can execute it with specific hardware and parameter settings. For example, to run with 2 CPUs, 1 GPU, and configure parameters like `num-env-runners` and `num-learners`, use:
-
+#### 🔹 Advanced (Deep Q-Network (DQN)):
 ```bash
-python advanced_rllib.py --num-cpus=2 --num-env-runners=1 --num-learners=1 --num-gpus-per-learner=1 --framework=torch
+python Advanced.py
 ```
+#### 🔹Advanced (RLlib Atari Training):
+This script supports configurable hardware resources and distributed training parameters.
+```bash
+python Advanced_rllib.py \
+  --num-cpus=2 \
+  --num-env-runners=1 \
+  --num-learners=1 \
+  --num-gpus-per-learner=1 \
+  --framework=torch
+```
+Notes:
+- Adjust CPU/GPU values based on your available hardware
+- Uses RLlib for scalable reinforcement learning
+- Results and training logs are tracked via Weights & Biases
+  
+### 🔹 Extras - Soft Actor-Critic on CarPole (SAC):
+```bash
+python Extras.py
+```
+------------
+## 📌 Key Takeaways
+
+- Implemented and compared tabular, value-based, and policy-gradient RL algorithms
+- Gained hands-on experience with:
+  - Exploration–exploitation trade-offs
+  - Stability improvements in deep RL
+  - High-dimensional visual environments
+- Ensured experiment reproducibility and visualization using Weights & Biases
+
+## 📚 References
+
+- Sutton & Barto — Reinforcement Learning: An Introduction
+- OpenAI Gym
+- RLlib Documentation
+
 
 *Note: The command uses `python`, not `!python`, unless you are executing within a Jupyter notebook.*
-
 
